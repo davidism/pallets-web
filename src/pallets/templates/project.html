@@ -1,11 +1,13 @@
 {% extends "layout.html" %}
 
 {% block page %}
-  <section style="text-align: center;">
-    <h1 class="title-replace">{{ page.name }}</h1>
-    <img style="height: 6em;" src="/static/content/projects/{{ page.logo }}">
+  <section class="project-logo">
+    <div>
+      <h1 class="title-replace">{{ page.name }}</h1>
+      <img style="height: 6em;" src="/static/content/projects/{{ page.logo }}">
+    </div>
   </section>
-  <nav>
+  <nav style="padding-bottom: 1.25rem;">
     <span></span>
     <ul>
       <li><a href="{{ page.docs }}">Documentation</a></li>
