@@ -4,12 +4,14 @@
   <section>
     {{ page.content_html | safe }}
   </section>
-  <section style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--pico-spacing);">
+  <section class="projects">
     {% for title in ("Flask", "Quart", "Jinja", "Click", "Werkzeug", "ItsDangerous", "MarkupSafe") %}
       {% set name = title.lower() %}
       <p>
-          <a href="projects/{{ name }}"><img src="/static/content/projects/{{ name }}-logo.png" style="height: 3em;"></a>
-          <a href="projects/{{ name }}" class="contrast"><strong>{{ title }}</strong></a>
+          <a href="projects/{{ name }}" class="contrast">
+            <img src="/static/content/projects/{{ name }}-logo.png" style="height: 3em;">
+            <strong>{{ title }}</strong>
+          </a>
       </p>
     {% endfor %}
   </section>
