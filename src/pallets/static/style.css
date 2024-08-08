@@ -14,7 +14,7 @@ header nav a.logo img {
 
 @media (max-width: 767px) {
   header nav {
-    overflow-x: auto;
+    overflow-x: hidden;
   }
 
   header nav a.logo img {
